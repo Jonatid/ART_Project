@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-        body {
+       .navbar {
+    background-color: #007bff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+ body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -142,6 +170,18 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+    <div class="logo">A Ride There</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="driver-dashboard.html">Driver Dashboard</a></li>
+        <li><a href="passenger-dashboard.html">Passenger Dashboard</a></li>
+    </ul>
+</nav>
+
     <header>
         <div class="logo">Logo</div>
         <nav>
