@@ -18,10 +18,12 @@
             list-style: none;
             display: flex;
             gap: 1.5rem;
+            position: relative;
         }
 
         .nav-links li {
             display: inline;
+            position: relative;
         }
 
         .nav-links a {
@@ -32,6 +34,35 @@
 
         .nav-links a:hover {
             text-decoration: underline;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         body {
@@ -63,27 +94,6 @@
             font-size: 1rem;
             color: #666;
         }
-
-        .hero .buttons {
-            margin-top: 1.5rem;
-        }
-
-        .hero .buttons a {
-            padding: 0.75rem 1.5rem;
-            margin: 0 0.5rem;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .hero .buttons .get-started {
-            background-color: #007bff;
-        }
-
-        .hero .buttons .join-now {
-            background-color: #28a745;
-        }
     </style>
 </head>
 <body>
@@ -94,18 +104,56 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="driver-dashboard.html">Driver Dashboard</a></li>
-            <li><a href="passenger-dashboard.html">Passenger Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#">Sign Up / Sign In</a>
+                <div class="dropdown-content">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="signin.html">Sign In</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Dashboard</a>
+                <div class="dropdown-content">
+                    <a href="driver-dashboard.html">Driver Dashboard</a>
+                    <a href="passenger-dashboard.html">Passenger Dashboard</a>
+                </div>
+            </li>
         </ul>
     </nav>
 
     <section class="hero">
         <h1>Empowering Your Gig Experience</h1>
         <p>Discover a platform designed for gig workers, offering rides, innovative freelance tools, and solutions.</p>
-        <div class="buttons">
-            <a href="#" class="get-started">Get Started</a>
-            <a href="#" class="join-now">Join Now</a>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <h3>Private Ride Scheduling</h3>
+            <p>Effortlessly arrange your rides with our scheduling tool. Enjoy a seamless way to connect and travel wherever your gig takes you.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="service">
+            <h3>Freelancer Tools</h3>
+            <p>Access a suite of tools tailored for freelancers, designed to enhance productivity and streamline your workflow.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="service">
+            <h3>Gig Solutions</h3>
+            <p>Explore comprehensive solutions crafted for gig workers, ensuring you have the resources you need to succeed.</p>
+            <a href="#">Learn More</a>
         </div>
     </section>
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>"This platform transformed my experience as a gig worker. Highly recommended!" - Alex M.</p>
+        <p>"Exceptional tools and resources! My career has grown significantly." - Jamie L.</p>
+        <p>"An absolute game-changer for gig workers everywhere." - Taylor S.</p>
+    </section>
+
+    <footer>
+        <div class="logo">A Ride There</div>
+        <p>Empowering Gig Workers - Together We Thrive</p>
+    </footer>
 </body>
 </html>
