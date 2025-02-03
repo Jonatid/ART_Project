@@ -37,21 +37,21 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: #280aa3;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
         .dropdown-content a {
-            color: black;
+            color: yellow;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
 
         .dropdown-content a:hover {
-            background-color: #f1f1f1;
+            background-color: #green;
         }
 
         .nav-links li:hover .dropdown-content {
@@ -65,9 +65,10 @@
         }
 
         header {
+            color: white;
             text-align: center;
             padding: 2rem;
-            background-color: #f1f1f1;
+            background-color: #0928ed;
         }
 
         .services, .gig-partner, .testimonials, .subscribe {
@@ -85,25 +86,27 @@
             padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 8px;
-            background-color: #fff;
+            background-color: #fffff;
         }
 
         .gig-partner {
+            color: white;
             text-align: center;
-            background-color: #f8f9fa;
+            background-color:#0928ed;;
         }
 
         .testimonials {
-            background-color: #f1f1f1;
+            background-color: #fffff;
             text-align: center;
         }
 
         .subscribe {
-            text-align: center;
+         background-color: #fffff;
+         text-align: center;
         }
 
         footer {
-            background-color: #007bff;
+            background-color: #0928ed;
             color: white;
             text-align: center;
             padding: 1rem;
@@ -135,20 +138,34 @@
         <p>Discover a platform designed for gig workers, offering rides, innovative freelance tools, and solutions.</p>
     </header>
 
-    <section class="services">
-        <div class="service">
-            <h3>Private Ride Scheduling</h3>
-            <p>Effortlessly arrange your rides with our scheduling tool. Enjoy a seamless way to connect and travel wherever your gig takes you.</p>
+   <section class="services">
+    <div class="service">
+        
+        <h3>Private Ride Scheduling</h3>
+        <p>Effortlessly arrange your rides with our scheduling tool. Enjoy a seamless way to connect and travel wherever your gig takes you.</p>
+      
+    
+  <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Private Ride Scheduling Image" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
+        </div></div>
+    <div class="service">
+       
+        <h3>Freelancer Tools</h3>
+        <p>Access a suite of tools tailored for freelancers, designed to enhance productivity and streamline your workflow.</p>
+       <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Freelancer Tools Image" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
         </div>
-        <div class="service">
-            <h3>Freelancer Tools</h3>
-            <p>Access a suite of tools tailored for freelancers, designed to enhance productivity and streamline your workflow.</p>
+    </div>
+    <div class="service">
+        
+        <h3>Gig Solutions</h3>
+        <p>Explore comprehensive solutions crafted for gig workers, ensuring you have the resources you need to succeed.</p>
+      <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Gig Solutions Image" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
         </div>
-        <div class="service">
-            <h3>Gig Solutions</h3>
-            <p>Explore comprehensive solutions crafted for gig workers, ensuring you have the resources you need to succeed.</p>
-        </div>
-    </section>
+    </div>
+</section>
+
 
     <section class="gig-partner">
         <h2>Revolutionizing the Gig Economy with Innovative Solutions</h2>
@@ -156,11 +173,49 @@
     </section>
 
     <section class="testimonials">
-        <h2>What Our Users Say</h2>
-        <p>"This platform transformed my experience as a gig worker. Highly recommended!" - Alex M.</p>
-        <p>"Exceptional tools and resources! My career has grown significantly." - Jamie L.</p>
-        <p>"An absolute game-changer for gig workers everywhere." - Taylor S.</p>
-    </section>
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="User Alex M" class="testimonial-img">
+            <p>"This platform transformed my experience as a gig worker. Highly recommended!"</p>
+            <h4>- Alex M.</h4>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="User Jamie L" class="testimonial-img">
+            <p>"Exceptional tools and resources! My career has grown significantly."</p>
+            <h4>- Jamie L.</h4>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="User Taylor S" class="testimonial-img">
+            <p>"An absolute game-changer for gig workers everywhere."</p>
+            <h4>- Taylor S.</h4>
+        </div>
+    </div>
+</section>
+
+<style>
+    .testimonial-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .testimonial {
+        max-width: 300px;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .testimonial-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+</style>
+
 
     <section class="subscribe">
         <h2>Join Our Community for Exclusive Updates</h2>
