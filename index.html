@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
-       .navbar {
+        .navbar {
             background-color: #007bff;
             padding: 1rem 2rem;
             display: flex;
@@ -18,11 +18,9 @@
             list-style: none;
             display: flex;
             gap: 1.5rem;
-            position: relative;
         }
 
         .nav-links li {
-            display: inline;
             position: relative;
         }
 
@@ -34,11 +32,6 @@
 
         .nav-links a:hover {
             text-decoration: underline;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
         }
 
         .dropdown-content {
@@ -53,15 +46,15 @@
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
-            display: block;
             text-decoration: none;
+            display: block;
         }
 
         .dropdown-content a:hover {
             background-color: #f1f1f1;
         }
 
-        .dropdown:hover .dropdown-content {
+        .nav-links li:hover .dropdown-content {
             display: block;
         }
 
@@ -70,29 +63,50 @@
             margin: 0;
             padding: 0;
         }
-        
-        header, footer {
-            background-color: #f8f9fa;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
 
-        .hero {
+        header {
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 2rem;
             background-color: #f1f1f1;
         }
 
-        .hero h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+        .services, .gig-partner, .testimonials, .subscribe {
+            padding: 2rem;
         }
 
-        .hero p {
-            font-size: 1rem;
-            color: #666;
+        .services {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .service {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .gig-partner {
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .testimonials {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .subscribe {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
         }
     </style>
 </head>
@@ -104,63 +118,46 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li class="dropdown">
+            <li>
                 <a href="#">Sign Up / Sign In</a>
-                <div class="dropdown-content">
-                    <a href="signup.html">Sign Up</a>
-                    <a href="signin.html">Sign In</a>
-                </div>
+                <ul class="dropdown-content">
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
             </li>
-            <li class="dropdown">
+            <li>
                 <a href="#">Dashboard</a>
-                <div class="dropdown-content">
-                    <a href="driver-dashboard.html">Driver Dashboard</a>
-                    <a href="passenger-dashboard.html">Passenger Dashboard</a>
-                </div>
+                <ul class="dropdown-content">
+                    <li><a href="driver-dashboard.html">Driver Dashboard</a></li>
+                    <li><a href="passenger-dashboard.html">Passenger Dashboard</a></li>
+                </ul>
             </li>
         </ul>
     </nav>
 
-   <section class="hero">
+    <header>
         <h1>Empowering Your Gig Experience</h1>
         <p>Discover a platform designed for gig workers, offering rides, innovative freelance tools, and solutions.</p>
-        <div class="buttons">
-            <a href="#" class="get-started">Get Started</a>
-            <a href="#" class="join-now">Join Now</a>
-        </div>
-    </section>
+    </header>
 
     <section class="services">
         <div class="service">
             <h3>Private Ride Scheduling</h3>
             <p>Effortlessly arrange your rides with our scheduling tool. Enjoy a seamless way to connect and travel wherever your gig takes you.</p>
-            <a href="#">Learn More</a>
         </div>
         <div class="service">
             <h3>Freelancer Tools</h3>
             <p>Access a suite of tools tailored for freelancers, designed to enhance productivity and streamline your workflow.</p>
-            <a href="#">Learn More</a>
         </div>
         <div class="service">
             <h3>Gig Solutions</h3>
             <p>Explore comprehensive solutions crafted for gig workers, ensuring you have the resources you need to succeed.</p>
-            <a href="#">Learn More</a>
         </div>
     </section>
 
     <section class="gig-partner">
         <h2>Revolutionizing the Gig Economy with Innovative Solutions</h2>
         <p>Welcome to A Ride There, where we facilitate seamless connections for gig workers. Our platform combines advanced tools and resources to elevate your professional journey while ensuring fair compensation.</p>
-        <div class="features">
-            <div class="feature">
-                <h3>Dynamic Calendar Features</h3>
-                <p>Utilize our dynamic scheduling calendar that adapts to your availability and helps you manage your gigs with ease.</p>
-            </div>
-            <div class="feature">
-                <h3>AI-driven Tools</h3>
-                <p>Leverage AI-powered tools designed to enhance your productivity and provide insights tailored to your work style.</p>
-            </div>
-        </div>
     </section>
 
     <section class="testimonials">
@@ -179,9 +176,7 @@
         </form>
     </section>
 
-
     <footer>
-        <div class="logo">A Ride There</div>
         <p>Empowering Gig Workers - Together We Thrive</p>
     </footer>
 </body>
