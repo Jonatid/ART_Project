@@ -1,66 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">  <!-- This line links the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #f1f1f1;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .hero button {
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .milestones {
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: #fff;
+        }
+        .milestones h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .milestones p {
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            color: #666;
+        }
+        .milestones .timeline {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .milestones .event {
+            max-width: 300px;
+            text-align: center;
+            margin: 1rem;
+        }
+        .milestones .event img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .milestones .event h3 {
+            margin-bottom: 0.5rem;
+        }
+        .core-values {
+            padding: 2rem 1rem;
+            background-color: #e9ecef;
+        }
+        .core-values h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .core-values .values {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .core-values .value {
+            max-width: 300px;
+            text-align: center;
+        }
+        .team {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .team h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .team .members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .team .member {
+            max-width: 150px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .team .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .team .member h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .impact {
+            padding: 2rem 1rem;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+        }
+        .impact h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .impact .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        .impact .stat {
+            max-width: 150px;
+        }
+        .cta {
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .cta h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .cta button {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+<body>
+    <body>
+    <nav class="navbar">
+        <div class="logo">A Ride There</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">Sign Up / Sign In</a>
+                <div class="dropdown-content">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="signin.html">Sign In</a>
+                    <a href="driver-dashboard.html">Driver Dashboard</a>
+                    <a href="passenger-dashboard.html">Passenger Dashboard</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
-<div class="about-container">
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>About Us</h1>
-            <p>Discover our mission, vision, and the values that drive us.</p>
-        </div>
+    <header>
+        <div class="logo">ABOUT US</div>
+        <nav>
+            <a href="#">Get Started</a>
+            <a href="#">Join Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Empowering Your Journey in the Gig Economy</h1>
+        <button>Discover More</button>
     </section>
 
-    <section class="about-intro">
-        <div class="intro-text">
-            <h2>Who We Are</h2>
-            <p>We are dedicated to transforming the gig economy by providing fair opportunities for drivers and seamless experiences for passengers.</p>
-        </div>
-        <div class="intro-image">
-            <img src="assets/about-intro.jpg" alt="Who We Are">
-        </div>
-    </section>
-
-    <section class="our-mission">
-        <div class="mission-content">
-            <h2>Our Mission</h2>
-            <p>Empowering gig workers with flexibility, independence, and control over their earnings while delivering exceptional service to passengers.</p>
-        </div>
-    </section>
-
-    <section class="why-choose-us">
-        <h2>Why Choose Us?</h2>
-        <div class="benefits-grid">
-            <div class="benefit-item">
-                <h3>Fair Compensation</h3>
-                <p>Drivers keep a greater share of their earnings compared to traditional rideshare platforms.</p>
+    <section class="milestones">
+        <h2>Milestones That Shaped Our Journey</h2>
+        <p>At A Ride There (ART), our story reflects an evolving commitment to the gig economy. We have continuously adapted, innovated, and grown, shaping the landscape for gig workers.</p>
+        <div class="timeline">
+            <div class="event">
+                <img src="placeholder.jpg" alt="Milestone 1">
+                <h3>February 24, 2024</h3>
+                <p>Launched our innovative booking system.</p>
             </div>
-            <div class="benefit-item">
-                <h3>Community-Driven</h3>
-                <p>We prioritize drivers and passengers by fostering trust and reliability.</p>
+            <div class="event">
+                <img src="placeholder.jpg" alt="Milestone 2">
+                <h3>February 28, 2024</h3>
+                <p>Expanded our freelancer marketplace.</p>
             </div>
-            <div class="benefit-item">
-                <h3>Technology Innovation</h3>
-                <p>Our platform is designed with cutting-edge tools to improve the gig economy.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="team-section">
-        <h2>Meet the Team</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <img src="assets/team1.jpg" alt="Team Member 1">
-                <h3>John Doe</h3>
-                <p>Founder & CEO</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/team2.jpg" alt="Team Member 2">
-                <h3>Jane Smith</h3>
-                <p>Chief Operations Officer</p>
+            <div class="event">
+                <img src="placeholder.jpg" alt="Milestone 3">
+                <h3>February 29, 2024</h3>
+                <p>Introduced a freelance resource hub.</p>
             </div>
         </div>
     </section>
-</div>
+
+    <section class="core-values">
+        <h2>Empowering the Future of Gig Work Together</h2>
+        <div class="values">
+            <div class="value">
+                <h3>Integrity</h3>
+                <p>We prioritize transparency and respect.</p>
+            </div>
+            <div class="value">
+                <h3>Innovation</h3>
+                <p>Offering cutting-edge solutions.</p>
+            </div>
+            <div class="value">
+                <h3>Community</h3>
+                <p>Building a supportive network.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Leadership Team</h2>
+        <div class="members">
+            <div class="member">
+                <img src="placeholder.jpg" alt="Team Member">
+                <h3>Team Member</h3>
+                <p>Position Title</p>
+            </div>
+            <div class="member">
+                <img src="placeholder.jpg" alt="Team Member">
+                <h3>Team Member</h3>
+                <p>Position Title</p>
+            </div>
+            <div class="member">
+                <img src="placeholder.jpg" alt="Team Member">
+                <h3>Team Member</h3>
+                <p>Position Title</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <h2>Driving Change in the Gig Economy</h2>
+        <div class="stats">
+            <div class="stat">
+                <h3>40+</h3>
+                <p>Empowered Workers</p>
+            </div>
+            <div class="stat">
+                <h3>100+</h3>
+                <p>Success Stories</p>
+            </div>
+            <div class="stat">
+                <h3>70K+</h3>
+                <p>Community Impact</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Embrace the Gig Economy and Unlock Your Potential</h2>
+        <button>Get Started</button>
+    </section>
+
+    <footer>
+        <div class="logo">Logo</div>
+        <p>Empowering Gig Workers - Together We Thrive</p>
+    </footer>
+</body>
+</html>
