@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        .navbar {
+            background-color: #007bff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #280aa3;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: yellow;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #green;
+        }
+
+        .nav-links li:hover .dropdown-content {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            background-color: #0928ed;
+        }
+
+        .services, .gig-partner, .testimonials, .subscribe {
+            padding: 2rem;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .service {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fffff;
+        }
+
+        .gig-partner {
+            color: white;
+            text-align: center;
+            background-color:#0928ed;;
+        }
+
+        .testimonials {
+            background-color: #fffff;
+            text-align: center;
+        }
+
+        .subscribe {
+         background-color: #fffff;
+         text-align: center;
+        }
+
+        footer {
+            background-color: #0928ed;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+        <div class="logo">A Ride There</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">Sign Up / Sign In</a>
+                <div class="dropdown-content">
+                    <a href="signup.html">Sign Up</a>
+                    <a href="signin.html">Sign In</a>
+                    <a href="driver-dashboard.html">Driver Dashboard</a>
+                    <a href="passenger-dashboard.html">Passenger Dashboard</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Empowering Your Gig Experience</h1>
+        <p>Discover a platform designed for gig workers, offering rides, innovative freelance tools, and solutions.</p>
+    </header>
+
+   <section class="services">
+    <div class="service">
+        
+        <h3>Private Ride Scheduling</h3>
+        <p>Effortlessly arrange your rides with our scheduling tool. Enjoy a seamless way to connect and travel wherever your gig takes you.</p>
+      
+    
+  <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Private Ride Scheduling Image" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
+        </div></div>
+    <div class="service">
+       
+        <h3>Freelancer Tools</h3>
+        <p>Access a suite of tools tailored for freelancers, designed to enhance productivity and streamline your workflow.</p>
+       <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Freelancer Tools Image" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
+        </div>
+    </div>
+    <div class="service">
+        
+        <h3>Gig Solutions</h3>
+        <p>Explore comprehensive solutions crafted for gig workers, ensuring you have the resources you need to succeed.</p>
+      <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Gig Solutions Image" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
+        </div>
+    </div>
+</section>
+
+
+    <section class="gig-partner">
+        <h2>Revolutionizing the Gig Economy with Innovative Solutions</h2>
+        <p>Welcome to A Ride There, where we facilitate seamless connections for gig workers. Our platform combines advanced tools and resources to elevate your professional journey while ensuring fair compensation.</p>
+    </section>
+
+    <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="User Alex M" class="testimonial-img">
+            <p>"This platform transformed my experience as a gig worker. Highly recommended!"</p>
+            <h4>- Alex M.</h4>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="User Jamie L" class="testimonial-img">
+            <p>"Exceptional tools and resources! My career has grown significantly."</p>
+            <h4>- Jamie L.</h4>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="User Taylor S" class="testimonial-img">
+            <p>"An absolute game-changer for gig workers everywhere."</p>
+            <h4>- Taylor S.</h4>
+        </div>
+    </div>
+</section>
+
+<style>
+    .testimonial-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .testimonial {
+        max-width: 300px;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .testimonial-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+</style>
+
+
+    <section class="subscribe">
+        <h2>Join Our Community for Exclusive Updates</h2>
+        <form>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Empowering Gig Workers - Together We Thrive</p>
+    </footer>
+</body>
+</html>
