@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Ride</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #343a40;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .hero button {
+            padding: 0.75rem 1.5rem;
+            background-color: white;
+            color: #343a40;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .features {
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .advantages {
+            padding: 2rem 1rem;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .advantages h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .advantages .items {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .advantages .item {
+            max-width: 200px;
+            text-align: center;
+        }
+        .cta {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .cta ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cta li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .cta button {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .testimonials {
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: #fff;
+        }
+        .testimonials h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .testimonials .items {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .testimonials .item {
+            max-width: 300px;
+            text-align: center;
+        }
+        .client-say {
+            padding: 2rem 1rem;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .client-say h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .client-say .items {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .client-say .item {
+            max-width: 300px;
+            text-align: center;
+        }
+        .faq {
+            padding: 2rem 1rem;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .faq h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .faq .questions {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .faq .question {
+            margin-bottom: 1rem;
+        }
+        .faq .question h3 {
+            font-size: 1rem;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .faq .question p {
+            font-size: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Get Started</a>
+            <a href="#">Join Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Elevate Your Journey with ART Services</h1>
+        <p>Experience seamless ride scheduling with A Ride There. Our platform is designed to empower individuals by connecting them to reliable freelancers in real-time.</p>
+        <button>Book Now</button>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Dynamic Calendar Feature</h3>
+            <p>Stay organized with our Dynamic Calendar, coordinating all your bookings in one place for optimal efficiency.</p>
+        </div>
+        <div class="feature">
+            <h3>AI-Driven Safety Tools</h3>
+            <p>Ensure secure journeys by proactively identifying potential risks and safeguarding users.</p>
+        </div>
+        <div class="feature">
+            <h3>Flat Fees for Services</h3>
+            <p>Enjoy transparent pricing, eliminating hidden costs and ensuring fair compensation.</p>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <h2>Discover the Advantages of Partnering with Us</h2>
+        <div class="items">
+            <div class="item">
+                <h3>Fair Earnings</h3>
+                <p>We ensure freelancers receive fair pay for their invaluable services.</p>
+            </div>
+            <div class="item">
+                <h3>Community Focused</h3>
+                <p>Our platform encourages a sense of community, where freelancers are supported and valued.</p>
+            </div>
+            <div class="item">
+                <h3>User-Friendly Tools</h3>
+                <p>Access advanced tools designed to simplify your process and enhance productivity.</p>
+            </div>
+            <div class="item">
+                <h3>Robust Support</h3>
+                <p>Count on our dedicated support team to address your needs and guide you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Transform your experience with ART's innovative rides and services.</h2>
+        <ul>
+            <li>Connect with skilled freelancers at your fingertips.</li>
+            <li>Enjoy seamless ride scheduling tailored to your needs.</li>
+            <li>Empower your gig workforce with the right tools and support.</li>
+        </ul>
+        <button>Get Started</button>
+    </section>
+
+    <section class="client-say">
+        <h2>What Our Clients Say</h2>
+        <div class="items">
+            <div class="item">
+                <p>"Working with A Ride There has completely transformed my scheduling experience. Highly recommended!"</p>
+                <p>- Sarah Johnson</p>
+            </div>
+            <div class="item">
+                <p>"I can't thank A Ride There enough for their outstanding service. The ease of booking and the quality of freelancers available has significantly improved my workflow and outcomes."</p>
+                <p>- Michael Smith</p>
+            </div>
+            <div class="item">
+                <p>"A Ride There has changed the game for how I manage my gigs. Their support and tools make it easy to thrive in the gig economy — it's a must for everyone!"</p>
+                <p>- Emily Davis</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Common Questions</h2>
+        <div class="questions">
+            <div class="question">
+                <h3>How can I easily schedule a ride?</h3>
+                <p>Our FAQ section is designed to provide you with clear and straightforward answers to the most common inquiries.</p>
+            </div>
+            <div class="question">
+                <h3>What payment methods are accepted?</h3>
+            </div>
+            <div class="question">
+                <h3>What is the cancellation policy?</h3>
+            </div>
+            <div class="question">
+                <h3>How can I contact support?</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">Logo</div>
+        <p>Empowering Gig Workers - Together We Thrive</p>
+    </footer>
+</body>
+</html>

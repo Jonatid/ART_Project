@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Details & History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .ride-history {
+            margin-top: 20px;
+        }
+        .ride {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .ride-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+        .ride-details {
+            margin-top: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ride Details & History</h1>
+    </header>
+    <div class="container">
+        <h2>Upcoming Rides</h2>
+        <div class="ride">
+            <div class="ride-header">
+                <span>Ride #12345</span>
+                <span>Feb 10, 2025 | 10:00 AM</span>
+            </div>
+            <div class="ride-details">
+                <p><strong>Pickup:</strong> 123 Main Street, Detroit, MI</p>
+                <p><strong>Dropoff:</strong> 456 Elm Street, Ann Arbor, MI</p>
+                <p><strong>Status:</strong> Scheduled</p>
+            </div>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <h2>Past Rides</h2>
+        <div class="ride-history">
+            <div class="ride">
+                <div class="ride-header">
+                    <span>Ride #12344</span>
+                    <span>Feb 8, 2025 | 2:00 PM</span>
+                </div>
+                <div class="ride-details">
+                    <p><strong>Pickup:</strong> 789 Oak Street, Lansing, MI</p>
+                    <p><strong>Dropoff:</strong> 101 Pine Avenue, Detroit, MI</p>
+                    <p><strong>Status:</strong> Completed</p>
+                </div>
+                <a href="#" class="btn">View Receipt</a>
+            </div>
+
+            <div class="ride">
+                <div class="ride-header">
+                    <span>Ride #12343</span>
+                    <span>Feb 7, 2025 | 9:30 AM</span>
+                </div>
+                <div class="ride-details">
+                    <p><strong>Pickup:</strong> 222 Maple Street, Detroit, MI</p>
+                    <p><strong>Dropoff:</strong> 333 Birch Road, Ann Arbor, MI</p>
+                    <p><strong>Status:</strong> Completed</p>
+                </div>
+                <a href="#" class="btn">View Receipt</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
